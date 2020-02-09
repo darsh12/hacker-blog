@@ -1,7 +1,8 @@
 ---
 title: Another Sample Page
 published: true
-tags: ["programming", "jekyll"]
+tags: programming jekyll
+category: How-To
 ---
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
