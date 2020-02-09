@@ -1,0 +1,6 @@
+_site/
+.sass-cache
+vendor/
+.idea/
+.jekyll-cache/
+Gemfile.lock
