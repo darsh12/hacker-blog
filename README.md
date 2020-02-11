@@ -14,7 +14,8 @@ Demo: [https://ashishchaudhary.in/hacker-blog](https://ashishchaudhary.in/hacker
 6. Sitemap (`https://base-url/sitemap`)
 7. Tag Posts
 8. Categorize Posts
-8. Google Analytics (optional)
+9. Search by Algolia
+10. Google Analytics (optional)
 
 ## Usage
 
@@ -78,6 +79,17 @@ Additionally, you may choose to set the following optional variables:
 ```yml
 google_analytics: [Your Google Analytics tracking ID]
 ```
+#### Algolia
+Edit the following variables under _config.yml file.
+```yml
+algolia:
+  application_id: <APP ID>
+  index_name: <INDEX NAME>
+  application_search_api: <SEARCH ONLY API>
+
+```
+
+For additional information visit [algolia](https://community.algolia.com/jekyll-algolia/getting-started.html)
 
 ### About Page
 
@@ -110,6 +122,8 @@ Custom CSS: Make `_sass/custom.scss` and use it. Then add `@import "custom";` to
 **404 page**
 
 Edit `404.md`
+
+
 
 ## License
 

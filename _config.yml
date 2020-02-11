@@ -30,14 +30,13 @@ plugins:
 algolia:
   application_id: <APP ID>
   index_name: <INDEX NAME>
+  application_search_api: <SEARCH ONLY API>
   files_to_exclude:
     - archive.md
     - about.md
     - categories.html
     - index.html
     - tags.html
-    - search.html
-
 
 # Custom variables
 owner: "SomeHacker"
