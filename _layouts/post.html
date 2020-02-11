@@ -5,8 +5,9 @@ layout: default
 <article>
   <h2>{{ page.title }}</h2>
   <div style="font-size: small">
-    <img src="assets/icons/calendar.png" class="icons"> <time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
-    <img src="assets/icons/time.png" class="icons"> <span class="icons-text">{% include read-time.html %}</span>
+    <img src="/assets/icons/calendar.png" class="icons">
+    <time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
+    <img src="/assets/icons/time.png" class="icons"> <span class="icons-text">{% include read-time.html %}</span>
   </div>
 
   {{ content }}
