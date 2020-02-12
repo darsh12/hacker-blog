@@ -1,11 +1,9 @@
 ---
 title: Another Sample Page
 published: true
-<<<<<<< HEAD
-=======
 tags: programming jekyll
 category: How-To
->>>>>>> master
+
 ---
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.

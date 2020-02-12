@@ -5,21 +5,6 @@
 <body>
   <div id="wrapper">
     {% include header.html %}
-<<<<<<< HEAD
-    <div class="container">
-      <section id="main_content">
-        {{ content }}
-      </section>
-    </div>
-  </div>
-
-  {% if paginator.total_pages > 1 %}
-  <div class="pagination">
-    {% if paginator.previous_page == 1 %}
-    <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&laquo;</a>
-    {% elsif paginator.previous_page%}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&laquo;</a>
-=======
     <div class="container initial-content">
       <section id="main_content">
         {% for tag in page.tags %}
@@ -38,7 +23,6 @@
     {% elsif paginator.previous_page%}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
        class="page-item">&laquo;</a>
->>>>>>> master
     {% else %}
     <span class="page-item">&laquo;</span>
     {% endif %} {% for page in (1..paginator.total_pages) %} {% if page == paginator.page %}
@@ -60,8 +44,5 @@
   {% endif %}
 </body>
 
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> master
+
