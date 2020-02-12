@@ -35,7 +35,7 @@ https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/tags.html
 <div class="posts">
     <p>
         {% for tag in tags %}
-        <a style="color:#999;text-decoration: none;" href="{{ "/tags/" | prepend: site.baseurl | replace: '//', '/' }}#{{ tag | slugify }}" > {{ tag }} </a> &nbsp;&nbsp;
+        <a style="color:#999;text-decoration: none;" href="{{ "/tags" | prepend: site.baseurl | replace: '//', '/' }}#{{ tag | slugify }}" > {{ tag }} </a> &nbsp;&nbsp;
         {% endfor %}
 
         {% for tag in tags %}

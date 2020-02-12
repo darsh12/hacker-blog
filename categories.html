@@ -34,7 +34,7 @@ https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/categories.html
 <div class="posts">
     <p>
         {% for ct in cats %}
-        <a href="{{ "/categories/" | prepend: site.baseurl | replace: '//', '/' }}#{{ ct | slugify }}" style="color:#999;text-decoration: none;"> {{ ct }} </a> &nbsp;&nbsp;
+        <a href="{{ "/categories" | prepend: site.baseurl | replace: '//', '/' }}#{{ ct | slugify }}" style="color:#999;text-decoration: none;"> {{ ct }} </a> &nbsp;&nbsp;
         {% endfor %}
         <a href="#no-category" style="color:#999;text-decoration: none;"> No
             Category </a> &nbsp;&nbsp;
