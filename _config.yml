@@ -31,9 +31,9 @@ plugins:
 
 
 algolia:
-  application_id: <APP ID>
-  index_name: <INDEX NAME>
-  application_search_api: <APP SEARCH API>
+  application_id: WBD3GHFNIR
+  index_name: github-pages
+  application_search_api: 724b0a8c168f90c358f8e216aa091b83
   files_to_exclude:
     - archive.md
     - about.md
