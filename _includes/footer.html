@@ -1,9 +1,16 @@
 <footer>
-  <a href="https://creativecommons.org/licenses/by-nc/3.0/deed.en_US">
+
+    <script src="/js/jquery-3.4.1.min.slim.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
+    <script src="/js/main.js"></script>
+    {% include search-algolia-script.html %}
+
+    <a href="https://creativecommons.org/licenses/by-nc/3.0/deed.en_US">
     <span>
         <b>{{ site.owner}}</b>
     </span>
-    {% capture currentyear %}{{ 'now' | date: "%Y" }}{% endcapture %}
-    <span>© {{ currentyear }}</span>
-  </a>
+        {% capture currentyear %}{{ 'now' | date: "%Y" }}{% endcapture %}
+        <span>© {{ currentyear }}</span>
+    </a>
+
 </footer>

@@ -1,6 +1,11 @@
 ---
 title: Another Sample Page
 published: true
+<<<<<<< HEAD
+=======
+tags: programming jekyll
+category: How-To
+>>>>>>> master
 ---
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
@@ -101,6 +106,10 @@ end
 
 ![](https://guides.github.com/activities/hello-world/branching.png)
 
+<<<<<<< HEAD
+=======
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+>>>>>>> master
 
 ### Definition lists can be used with HTML syntax.
 

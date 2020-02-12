@@ -2,46 +2,55 @@
 
 *Hacker-Blog is a minimalistic, responsive jekyll theme built for hackers. It is based on the [hacker theme](https://github.com/pages-themes/hacker) for project pages.*
 
-Demo: [https://ashishchaudhary.in/hacker-blog](https://ashishchaudhary.in/hacker-blog)
+Demo: [https://darsh12.github.io/hacker-blog](https://darsh12.github.io/hacker-blog)
 
 ### Included
 
 1. Pagination
 2. SEO tags
 3. Archive Page
-4. RSS
-5. Sitemap 
+4. About Page
+5. RSS (`https://base-url/atom`)
+6. Sitemap (`https://base-url/sitemap`)
+7. Tag Posts
+8. Categorize Posts
+9. Search by Algolia
+10. Google Analytics (optional)
+
 
 ## Usage
 
 1. Fork and Clone this repository
 2. Customize your blog
 3. Add a new post in `_posts/` directory with proper name format (as shown in placeholder posts)
-4. Commit and push to master 
+4. Commit and push to master on a repository named `<githubusername.github.io>`.
+5. Visit `<githubusername>.github.io`
 
 ## Local Build
 
 If you want to see the changes before pushing the blog to Github, do a local build.
 
-1. [`gem install jekyll`](https://jekyllrb.com/docs/installation/#install-with-rubygems)
-2. `gem install jekyll-seo-tag`
-3. (`cd` to the blog directory, then:) `jekyll serve --watch --port 8000`
-4. Go to `http://0.0.0.0:8000/` in your web browser.
+1. `bundle install`
+2. (`cd` to the blog directory, then:) `jekyll serve --watch --port 8000`
+3. Go to `http://0.0.0.0:8000/` in your web browser.
+6. (`cd` to the blog directory, then:) `jekyll serve --watch --port 8000`
+7. Go to `http://0.0.0.0:8000/` in your web browser.
 
 *Note: In case you have set a `baseurl` different than `/` in `_config.yml`, go to `http://0.0.0.0:8000/BASEURL/` instead.*
 
 ### Local build using docker
 
 ```bash
-docker run --rm -p 8000:8000 \
+docker run --rm -p 4000:4000 \
   --volume="LOCATION_OF_YOUR_JEKYLL_BLOG:/srv/jekyll" \
-  -it tocttou/jekyll:3.5 \
-  jekyll serve --watch --port 8000
+  --volume="LOCATION_OF_YOUR_JEKYLL_BLOG/vendor/bundle:/usr/local/bundle" \  
+  -it jekyll/jekyll:4 \
+  jekyll serve --watch 
 ```
 
 Replace `LOCATION_OF_YOUR_JEKYLL_BLOG` with the full path of your blog repository. Visit `http://localhost:8000/` to access the blog.
 
-*Note: In case you have set a `baseurl` different than `/` in `_config.yml`, go to `http://0.0.0.0:8000/BASEURL/` instead.*
+*Note: In case you have set a `baseurl` different than `/` in `_config.yml`, go to `http://0.0.0.0:4000/BASEURL/` instead.*
 
 ## Customizing
 
@@ -71,6 +80,18 @@ Additionally, you may choose to set the following optional variables:
 ```yml
 google_analytics: [Your Google Analytics tracking ID]
 ```
+
+#### Algolia
+Edit the following variables under _config.yml file.
+```yml
+algolia:
+  application_id: <APP ID>
+  index_name: <INDEX NAME>
+  application_search_api: <SEARCH ONLY API>
+
+```
+
+For additional information visit [algolia](https://community.algolia.com/jekyll-algolia/getting-started.html)
 
 ### About Page
 
@@ -103,6 +124,7 @@ Custom CSS: Make `_sass/custom.scss` and use it. Then add `@import "custom";` to
 **404 page**
 
 Edit `404.md`
+
 
 ## License
 

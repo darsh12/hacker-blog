@@ -1,0 +1,61 @@
+.icons {
+  margin-bottom: -12px;
+}
+
+.icons-text {
+  margin-left: -10px;
+}
+
+.is--hidden {
+  display: none;
+  visibility: hidden
+}
+
+.search-content.is--visible {
+  display: block;
+  visibility: visible
+}
+
+.search-content.is--visible::after {
+  content: "";
+  display: block
+}
+
+.search-content {
+  display: none;
+  visibility: hidden;
+  padding-top: 1em;
+  padding-bottom: 1em
+}
+
+// Algolia search and hits
+.ais-search-box {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+.post-item {
+  margin-bottom: 30px;
+}
+
+.post-link .ais-Highlight {
+  color: #111;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+
+.post-breadcrumb .ais-Highlight {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.post-snippet .ais-Highlight {
+  color: #2a7ae2;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.post-snippet img {
+  display: none;
+}

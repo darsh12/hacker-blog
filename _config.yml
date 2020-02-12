@@ -5,13 +5,15 @@ author:
   email: "someone@somewebsite.somedomain"
   url: "https://darsh12.github.io/hacker-blog"
 
+
 baseurl: /
 
 source: .
 destination: ./_site
-permalink: /:title
+
+permalink: /:categories/:year/:title
 paginate: 3
-paginate_path: /page:num/
+paginate_path: /page/:num/
 
 defaults:
   -
@@ -27,7 +29,20 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
+
+algolia:
+  application_id: WBD3GHFNIR
+  index_name: github-blog
+  application_search_api: 724b0a8c168f90c358f8e216aa091b83
+  files_to_exclude:
+    - archive.md
+    - about.md
+    - categories.html
+    - index.html
+    - tags.html
+
 # Custom variables
-owner : "SomeHacker"
-year : "2018"
-theme: jekyll-theme-hacker
+owner: "SomeHacker"
+year: "2020"
+
+
