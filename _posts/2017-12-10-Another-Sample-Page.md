@@ -103,10 +103,9 @@ end
 
 ![](https://guides.github.com/activities/hello-world/branching.png)
 
-<<<<<<< HEAD
-=======
+
 ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
->>>>>>> master
+
 
 ### Definition lists can be used with HTML syntax.
 
