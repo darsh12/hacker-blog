@@ -22,7 +22,7 @@
                     console.log(hit.slug)
                     return `
           <div class="post-item">
-            <h2><a class="post-link" href="${hit.url}">${hit.title}</a></h2>
+            <h2><a class="post-link" href="{{site.baseurl}}${hit.url}">${hit.title}</a></h2>
             <div class="post-snippet">${hit.html}</div>
           </div>
         `;
@@ -35,3 +35,4 @@
     // Starting the search
     search.start();
 </script>
+

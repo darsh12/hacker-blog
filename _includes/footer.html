@@ -1,8 +1,9 @@
 <footer>
 
-    <script src="/js/jquery-3.4.1.min.slim.js"></script>
+    <script src="{{ "/js/jquery-3.4.1.min.slim.js" | prepend: site.baseurl | replace: '//', '/' }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
-    <script src="/js/main.js"></script>
+
+    <script src="{{ "/js/main.js" | prepend: site.baseurl | replace: '//', '/' }}"></script>
     {% include search-algolia-script.html %}
 
     <a href="https://creativecommons.org/licenses/by-nc/3.0/deed.en_US">
