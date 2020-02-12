@@ -8,10 +8,10 @@ layout: default
     <li>
         <h2><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h2>
         <div style="font-size: small">
-            <img src="/assets/icons/calendar.png" class="icons">
+            <img src="{{ "/assets/icons/calendar.png" | prepend: site.baseurl | replace: '//', '/' }}" class="icons">
             <time datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
-            <img src="/assets/icons/time.png" class="icons"> <span
-                class="icons-text">{% include read-time.html %}</span>
+            <img src="{{ "/assets/icons/time.png" | prepend: site.baseurl | replace: '//', '/' }}" class="icons"> <span class="icons-text">{% include read-time.html %}</span>
+
         </div>
         <p>{{ post.content | strip_html | truncatewords:50 }}</p>
     </li>

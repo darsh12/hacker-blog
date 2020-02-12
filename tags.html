@@ -35,7 +35,7 @@ https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/tags.html
 <div class="posts">
     <p>
         {% for tag in tags %}
-        <a style="color:#999;text-decoration: none;" href="#{{ tag | slugify }}" > {{ tag }} </a> &nbsp;&nbsp;
+        <a style="color:#999;text-decoration: none;" href="{{ "/tags/" | prepend: site.baseurl | replace: '//', '/' }}#{{ tag | slugify }}" > {{ tag }} </a> &nbsp;&nbsp;
         {% endfor %}
 
         {% for tag in tags %}
@@ -45,7 +45,7 @@ https://github.com/codinfox/codinfox-lanyon/blob/dev/blog/tags.html
         {% if post.tags contains tag %}
         <li>
             <h3>
-                <a href="{{ post.url }}">{{ post.title }}</a>
+                <a href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}{{ post.url }}">{{ post.title }}</a>
                 <span><h5 style="color: white">{{ post.date | date_to_string }}</h5></span>
             </h3>
         </li>
